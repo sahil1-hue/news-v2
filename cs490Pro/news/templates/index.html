@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div  style="color:black">
+
+      <h1 style ="color:blue">
+  This is a test
+      </h1>
+
+    </div>
+
+
+    <div >
+      {% for newsTitle, description,url, i in Newslist %}
+              <img src="{{ i }}" alt="">
+              <h1>news:</h1> {{ new }}
+              {{ value|linebreaks }}
+
+              <h4>description:</h4>{{ description }}
+              {{ value|linebreaks }}
+                <a href ="{{ url }}"> link to news</a>
+ {{ value|linebreaks }}
+      {% endfor %}
+    </div>
+
+  </body>
+</html>
